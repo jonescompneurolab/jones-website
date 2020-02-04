@@ -1,0 +1,329 @@
+/*
+ * lab website-specific CSS
+ */
+
+/* */
+/* disabled elements */
+/* */
+
+#footer-bottom {
+	display: none;
+}
+/* end */
+
+/* */
+/* edit style of embedded twitter timeline */
+/* */
+
+#twitter_timeline-3 {
+      text-align: center !important;
+      margin: auto !important;
+      width: 100% !important;
+	    max-width: 800px !important;
+    }
+/* end */
+
+/*
+ * general lab CSS
+ */
+
+/* */
+/* style for table of contents section */
+/* */
+
+.srj-c800 {
+	max-width: 800px;
+	text-align: center;
+	line-height: 2;
+	margin:auto;
+}
+
+p.srj-toc {
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inherit;
+}
+
+a:link.srj-toc, a:visited.srj-toc{
+	color: gray;
+}
+
+a:hover.srj-toc, a:active.srj-toc{
+	color: var(--hnn-purple);
+}
+
+/* end  */
+
+/* */
+/* style for basic webpage */
+/* */
+
+.srj {
+	text-align: center;
+  margin: auto;
+	font-size: 18px;
+  line-height: 2;
+  color: #333;
+}
+
+.srj.m-width {
+	max-width: 825px;
+}
+
+.srj.l-width {
+  max-width: 1100px;
+}
+
+.srj-center {
+  text-align: center;
+	margin: auto;
+}
+
+.srj-icon {
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 60px !important;
+}
+
+.srj-gray {
+  color: #3C4858;
+}
+
+.srj ol li {
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.srj .block-break {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 10px;
+}
+
+.srj h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.srj h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.srj h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.srj h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.srj h5 {
+  font-weight: 700;
+}
+
+/* */
+/* "legacy" classes */
+/* */
+
+.hnn {
+  font-size: 18px;
+  color: #333;
+  max-width: 825px;
+  margin: auto;
+}
+
+.hnn.home-page {
+  max-width: 1100px;
+  line-height: 2;
+}
+
+.hnn-center {
+  text-align: center;
+}
+
+.hnn-icon-center {
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 60px !important;
+}
+
+.hnn-boldcolor {
+  color: #3C4858;
+}
+
+.hnn ol li {
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.block-break {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 10px;
+}
+
+.hnn h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.hnn h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hnn h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hnn h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hnn h5 {
+  font-weight: 700;
+}
+
+/*
+ * HNN theme colors
+ */
+
+.hnn-blue {
+  color: #1156A3;
+}
+
+:root {
+  --hnn-blue: #1156A3;
+}
+
+.hnn-purple {
+  color: #474095;
+}
+
+:root {
+  --hnn-purple: #474095;
+}
+
+.hnn-violet {
+  color: #812A89;
+}
+
+:root {
+  --hnn-violet: #812A89;
+}
+
+.hnn-yellow {
+  color: #e5a734;
+}
+
+/*
+ * HNN website-specific code
+ */
+
+.Tutorial-wrapper {
+  border: 0px dotted #608ba8;
+  max-width: 975px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  overflow: auto;
+}
+
+.Tutorial-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+  justify-items: center;
+  margin: 0px;
+}
+
+.Tutorial-cell-align {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Tutorial-cell-align img {
+  max-width: 60px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.Tutorial-icon-text {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.Tutorial-cell {
+  display: block;
+  overflow: auto;
+  max-width: 300px;
+  min-width: 300px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  height: 150px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e7e7e7;
+  background-color: #fff;
+}
+
+.Install-cell {
+  display: block;
+  overflow: auto;
+  height: 125px;
+  max-width: 170px;
+  min-width: 170px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 15px;
+  border-style: none;
+  background-color: none;
+  border-color: var(--hnn-violet);
+  border-width: 0.5px;
+}
+
+.special-list li {
+  background-size: 33px;
+  margin: 0px;
+  padding: 15px 0px 15px 55px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left 13px;
+}
+
+.bulb-list li {
+  background-image: url('https://raw.githubusercontent.com/jonescompneurolab/hnn-tutorials/master/html-styling/png-icons/bulb.png');
+}
+
+.check-list li {
+  background-image: url('https://hnn.brown.edu/wp-content/uploads/2019/06/Check.png');
+}
+
+/* end */
