@@ -2,6 +2,40 @@
  *** basic webpage styling
  ***/
 
+ /* header container */
+ .srj-header {
+   display: flex;
+   position: relative;
+   height: 300px;
+   width: 100%;
+   background-size:cover;
+   background-position:center;
+   background-repeat:no-repeat;
+   background-image:
+   linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://raw.githubusercontent.com/jonescompneurolab/jones-website/master/images/shutterstock_brain-02.jpg);
+ }
+
+ /* header text */
+ .srj-headertext {
+   font-family: sans-serif;
+   line-height: 1.25;
+   /*font-size: 2.4em;*/ /*font-size: 2.5vw;*/
+   font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+   font-weight: 600;
+   text-align: center;
+   color: #FFFFFF;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+.srj-headertext .srj-headertext-small {
+ font-size: 0.65em;
+}
+
+/* general styling */
+
 .srj {
  text-align: center;
  margin: auto;
